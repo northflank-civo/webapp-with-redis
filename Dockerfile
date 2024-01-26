@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:18-alpine
 WORKDIR /var/application/northflank
 
 COPY package.json  .
@@ -9,4 +9,4 @@ RUN yarn install
 COPY . .
 
 EXPOSE 3000
-CMD [ "node", "index.js" ]
+CMD [ "yarn", "start" ]
