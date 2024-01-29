@@ -23,8 +23,12 @@ export default async function addFilms() {
     'Inception',
   ];
 
+  const entries = await client.lrange('films', 0, 100);
+
   for (const title of imdbTop10) {
-    await client.lpush(['films', title]);
+    if (!entries.includes(title)) {
+      await client.lpush(['films', title]);
+    }
   }
 
   console.log('Done!');
