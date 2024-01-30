@@ -13,7 +13,7 @@ client.on('error', (err) => {
   }
 });
 
-const TITLE = 'Node.js + Redis on Northflank - Hello World';
+const TITLE = 'Node.js + Redis on Northflank - PR Hello';
 
 const handleIndex = async (ctx, next) => {
   if (connectionErr && initialConnect) {
