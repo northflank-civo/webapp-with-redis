@@ -11,6 +11,7 @@ client.on('error', (err) => {
 
 export default async function addFilms() {
   const imdbTop10 = [
+    'Amazing new Film',
     'The Shawshank Redemption',
     'The Godfather',
     'The Dark Knight',
