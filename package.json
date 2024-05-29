@@ -1,5 +1,5 @@
 {
-  "name": "civo-northflank-demo",
+  "name": "northflank-redis-demo",
   "version": "0.0.1",
   "private": true,
   "main": "src/app/index.js",
